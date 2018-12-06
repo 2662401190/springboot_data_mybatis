@@ -4,7 +4,8 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.245.132:3306/mybatis
+
+    url: jdbc:mysql://localhost:3306/mybatis
     type: com.alibaba.druid.pool.DruidDataSource
 
 
@@ -28,4 +29,6 @@ spring:
 #    schema:
 #      - classpath:sql/department.sql
 #      - classpath:sql/employee.sql
-
+mybatis:
+  config-location: classpath:mybatis/mybatis_config.xml
+  mapper-locations: mybatis/mapper/*.xml
